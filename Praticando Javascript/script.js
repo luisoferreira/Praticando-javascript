@@ -103,8 +103,8 @@
 // console.log(soma);
 
 
-//FIND 
-//Retorna o primeiro elemento que atende a condição 
+// FIND 
+// Retorna o primeiro elemento que atende a condição 
 
 // let produtos = [
 //     { id:1 , nome: "Teclado", preço: 50 } , //produtos
@@ -115,5 +115,12 @@
 // let item = produtos.find(produto => produto.id === 2)
 
 // console.log(item);
+
+
+//DIFERENÇA ENTRE FILTER E FIND 
+let itemFiltrado = produtos.filter(produto => produto.id === 2)
+
+console.log(itemFiltrado);
+
 
 

@@ -41,12 +41,8 @@
 
 
 //NUMEROS PARES DE 1 A 50
+// let numero = 50;
 
-let numero = 50 
-
-for ( i = 1; i<= numero; i +2) {
-    
-    console.log(i);
-    
-    
-}
+// for (let i = 0; i <= numero; i += 2) {
+//     console.log(i);
+// }
