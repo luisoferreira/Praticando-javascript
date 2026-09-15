@@ -110,25 +110,27 @@
 // else{
 //     alert("Impar")
 // }
-numero1 = Number(prompt("Primeiro numero:"))
-let operacao = prompt("operação:")
-let numero2 = Number(prompt("Segundo numero:"))
 
 
-if(operacao === "+")
-{
-    alert(numero1 + numero2);
+// numero1 = Number(prompt("Primeiro numero:"))
+// let operacao = prompt("operação:")
+// let numero2 = Number(prompt("Segundo numero:"))
 
-}
-else if(operacao == "-")
-{
-        alert(numero1 - numero2);
-}
-else if(operacao == "*")
-{
-        alert(numero1 * numero2);
-}
-else if (operacao == "/")
-{
-        alert(numero1 / numero2);
-}
+
+// if(operacao === "+")
+// {
+//     alert(numero1 + numero2);
+
+// }
+// else if(operacao == "-")
+// {
+//         alert(numero1 - numero2);
+// }
+// else if(operacao == "*")
+// {
+//         alert(numero1 * numero2);
+// }
+// else if (operacao == "/")
+// {
+//         alert(numero1 / numero2);
+// }

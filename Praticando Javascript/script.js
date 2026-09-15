@@ -108,7 +108,8 @@
 
 // let produtos = [
 //     { id:1 , nome: "Teclado", preço: 50 } , //produtos
-//     { id:2 , nome: "Mouse", preço:30}
+//     { id:2 , nome: "Mouse", preço:30} , 
+//     { id: 2, nome: "Caderno" , preço:30}
     
 // ]
 
@@ -117,10 +118,92 @@
 // console.log(item);
 
 
-//DIFERENÇA ENTRE FILTER E FIND 
-let itemFiltrado = produtos.filter(produto => produto.id === 2)
+// //DIFERENÇA ENTRE FILTER E FIND 
+// //find -> retorna somente o primeiro elemento que ele econtra com a condição
+// //filter -> retorna todos os elementos que encontra com a condição 
+// let itemFiltrado = produtos.filter(produto => produto.id === 2)
 
-console.log(itemFiltrado);
+// console.log(itemFiltrado);
+
+// produtos.filter(function(produto)
+// {
+//      produto.id === 2
+// })
+
+
+
+// SPLIT 
+// DIVIDE A STRING EM PARTES , TRANSFORMANDO EM UM ARRAY 
+// let frase = "JS é top"
+
+// let palavras = frase.split(" ")
+// console.log(palavras);
+
+
+
+// //TRIM
+//trim remove espaços no inicio e final de string
+// let nome = "     Paulo"
+// let nomeLimpo = nome.trim()
+
+//     console.log(nome);
+    
+//     console.log(nomeLimpo);
+    
+
+//INCLUDES
+//Verifica se existe um valor dentro de uma lista e retorna um booleano
+//verdadeiro ou falso 
+
+// let frutas = ["maça" ,"banana"]
+
+// let frutasIncludes = frutas.includes("maça")
+// console.log(frutasIncludes);
+
+
+// let nome = "LUIS"
+// let cargo = "aluno"
+
+// console.log(nome.toLowerCase()); // luis
+// console.log(cargo.toUpperCase());  // ALUNO
+
+// FOREACH 
+//PERCORRE O ARRAY E IMPRIME OS NOMES AI (GUILHERME , LUIS , MURILO )
+// let nomes = ["Guilherme" , "Luis" , "Murilo"]
+ 
+// nomes.forEach(nome =>console.log(nome));
+
+
+//SOME
+// Verifica se pelo menos um item atende a condição
+// retorna um booleano 
+
+// let numeros = [1, 3, 5, 8]
+
+// let temPar = numeros.some(num => num % 2 === 0)
+// console.log(temPar);  // true
+
+//EVERY 
+//Verifique se todos os elementos atende a condição 
+// let todosPares = numeros.every(num => num % 2 === 0)
+// console.log(todosPares);  // false 
+
+
+//SORT
+//Ordena os elementos do array
+
+let numeros = [3, 10, 5, 2, 4]
+let letras =  ["c" , "a" , "x" , "h"]
+
+//para letras 
+letras.sort()
+console.log(letras);
+
+//para numeros
+numeros.sort((a, b) => a-b)
+console.log(numeros);
+
+
 
 
 
