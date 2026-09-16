@@ -110,7 +110,7 @@
 //     { id:1 , nome: "Teclado", preço: 50 } , //produtos
 //     { id:2 , nome: "Mouse", preço:30} , 
 //     { id: 2, nome: "Caderno" , preço:30}
-    
+
 // ]
 
 // let item = produtos.find(produto => produto.id === 2)
@@ -147,9 +147,9 @@
 // let nomeLimpo = nome.trim()
 
 //     console.log(nome);
-    
+
 //     console.log(nomeLimpo);
-    
+
 
 //INCLUDES
 //Verifica se existe um valor dentro de uma lista e retorna um booleano
@@ -170,7 +170,7 @@
 // FOREACH 
 //PERCORRE O ARRAY E IMPRIME OS NOMES AI (GUILHERME , LUIS , MURILO )
 // let nomes = ["Guilherme" , "Luis" , "Murilo"]
- 
+
 // nomes.forEach(nome =>console.log(nome));
 
 
@@ -192,18 +192,169 @@
 //SORT
 //Ordena os elementos do array
 
-let numeros = [3, 10, 5, 2, 4]
-let letras =  ["c" , "a" , "x" , "h"]
+// let numeros = [3, 10, 5, 2, 4]
+// let letras =  ["c" , "a" , "x" , "h"]
 
-//para letras 
-letras.sort()
-console.log(letras);
+// //para letras 
+// letras.sort()
+// console.log(letras);
 
-//para numeros
-numeros.sort((a, b) => a-b)
-console.log(numeros);
-
-
+// //para numeros
+// numeros.sort((a, b) => a-b)
+// console.log(numeros);
 
 
+//REVERSE
+//inverte a ordem dos elementos no array 
+// let numeros = [ 1, 2, 3]
 
+// numeros.reverse();
+// console.log(numeros); // 3, 2, 1
+
+
+//JOIN
+//Junta os elementos de um array em uma string
+// let palavras = ["JS", "é" , "top"];
+
+// let frase = palavras.join(" ")
+// console.log(frase);
+
+
+//ADICIONANDO E REMOVENDO ELEMENTOS DE UM ARRAY 
+//RUSH
+//POP
+//SHIFT
+//UNSHIFT
+
+// let lista = ["A", "B"]
+
+// //PUSH -> Adiciona elementos no final do array 
+// lista.push("C") //Adicionando
+// console.log(lista);
+
+// //POP -> Remove os elementos no final da lista
+// lista.pop(); //Removendo
+// console.log(lista);
+
+// //SHIFT -> Remove elementos no começo da lista 
+// lista.shift(); //remove
+// console.log(lista);
+
+// //UNSHIFT -> Adicionar elementos no inicio da lista
+// lista.unshift("A");
+// console.log(lista);
+
+
+//SLICE
+//Cria uma cópia de uma parte da lista 
+
+/*
+    array.slice(inicial, final)
+
+    inicial -> onde começa
+    final -> onde termina (nao inclui a posição/indice/index)
+*/
+
+// let numeros = [1, 2, 3, 4];
+
+// let parte = numeros.slice(1, 3); //posições do array
+// console.log(parte);
+
+
+//SPLICE
+
+/*
+    array.splice(index, count, item1, ....., itemX)
+
+    index -> indice(posição do elemento no array)
+    count -> numero de elementos a serem removidos (pode ser 0)
+    item, ..., itemX -> itens a serem adicionados
+*/
+
+//Remove ou adiciona elementos em qualquer posição 
+
+// let numeros = [1, 2, 3, 4];
+
+// //removendo elementos sem adicionar
+// numeros.splice(1,1);
+// console.log(numeros);
+
+// //removendo elementos e adicionando mais dois elementos
+// let frutas =["Banana", "Laranja", "Maça", "Manga"]
+
+// // frutas.splice(0, 3, "Limão", "kiwi");
+// // console.log(frutas); ("Limão", "kiwi" ,"Manga")
+
+// //Adicionando elementos sem remover 
+// frutas.splice(2,0, "Limão", "kiwi");
+// console.log(frutas);
+
+
+//REPLACE
+//Substitui uma parte da string
+/*
+    replace(valorProcurado, "ValorQueSubstitui")
+
+*/
+
+// let texto = "Olá, mundo!";
+
+// let novoTexto = texto.replace("mundo" , "Cliente");
+// console.log(novoTexto);
+
+
+//NOSSAS FUNÇÕES
+
+//função comum 
+// function exibirMensagens() {
+//     console.log("Bem vindo(a)!");
+
+// }
+
+// exibirMensagens()
+
+// function cumprimentar(nome) {
+//     console.log(`Olá, ${nome}`);
+
+// }
+
+// cumprimentar("Ana")
+// cumprimentar("Carlos")
+
+
+//Funão com mais de um parametro 
+
+// function somar(n1, n2) {
+//     let soma = n1 +  n2
+//     console.log(soma);
+
+// }
+
+// somar(2,3);
+
+//outra forma de fazer a nova função de somar()
+// const somar = (n1, n2) => n1 + n2;
+
+//     console.log(somar(1,2));
+
+
+//PROMPT
+//recebe/solicita uma informação do usuario
+//o valor recebido pelo prompt() normamente é string 
+
+let nome = prompt("Digite seu nome: ")
+
+console.log(nome);
+
+//recebendo um numero e convertendo 
+
+//Number() -> converte de forma generica 
+let idade = Number(prompt("Digite sua idade: "))
+
+
+//Parseint() -> Converte o valor para um numero inteiro 
+
+idade = Number(prompt("Digite sua idade: "));
+
+//Parsefloat() -> Converte um valor para o numero decimal/ponto flutuante
+idade = parseFloat(prompt("Digite sua idade"));
