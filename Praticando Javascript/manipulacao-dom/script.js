@@ -79,17 +79,61 @@
 
     //EVENTO DE FORMULÁRIO (submit)
 
-    const form  = document.querySelector("form");// pegando direto pela tag form
+    // const form  = document.querySelector("form");// pegando direto pela tag form
 
-    //O COMPORTAMENTO PADRÃO DO FORMULÁRIO É RECARREGUAR A PÁGINA AO ENVIAR O SUBMIT
-    form.addEventListener("submit" , (e) =>{
+    // //O COMPORTAMENTO PADRÃO DO FORMULÁRIO É RECARREGUAR A PÁGINA AO ENVIAR O SUBMIT
+    // form.addEventListener("submit" , (e) =>{
 
-        // impede o comportamento padrão do formulário 
-        e.preventDefault()
+    //     // impede o comportamento padrão do formulário 
+    //     e.preventDefault()
 
-        const nome = document.getElementById("nome").value
+    //     const nome = document.getElementById("nome").value
 
-        console.log(`Nome: ${nome}`);
+    //     console.log(`Nome: ${nome}`);                                            
         
 
+    // })
+
+
+    // //Criando elementos nas páginas 
+    // const novoElemento = document.createElement("p");  //Cria o elemento <p>
+    // novoElemento.innerText = "Elemento novo criado.";  //Cria um texto no elemento
+
+    // const form = document.getElementById("form");
+
+    // // Estamos adicionando um elemento filho (p) dentro do pai (form)
+    // form.appendChild(novoElemento); 
+
+    // //Criar um botão 
+    // const botao = document.createElement("button");
+    // botao.innerText("Excluir elemento");
+
+    // form.appendChild(botao);
+
+    // botao.addEventListener("click", (e) => {
+    //     e.preventDefault();
+
+    //     novoElemento.remove();
+
+    //     // apagando direto do pai 
+    //     // form.removeChild(novoElemento)
+    // })
+
+
+    //Adicionando elementos de uma lista , a partir de um input 
+    const input = document.getElementById("input");  // input 
+    const botao = document.getElementById("add");    // botao
+    const lista = document.getElementById("lista")   // ul
+
+    botao.addEventListener("click", (e) => {
+
+        const valorDigitado = input.value; // Pega o valor que foi digitado na caixinha/input 
+
+        const li = document.createElement("li"); // criando <i>
+        li.innerText = valorDigitado;
+
+        //Colocando o filho (li) dentro do pai (ul)
+        lista.appendChild(li)
+
+        input.value = "";
     })
